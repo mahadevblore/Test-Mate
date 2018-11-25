@@ -1,0 +1,53 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="AutomationModernUI.Pages.Settings.Report" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+            <StackPanel x:Name="Panel" MinWidth="150">
+                <TextBlock Text="REPORT AN ISSUE" Style="{StaticResource SectionHeaderTextStyle}" Margin="0,0,0,8" />
+
+                <ListBox ItemsSource="{Binding AccentColors}"
+					SelectedItem="{Binding SelectedAccentColor, Mode=TwoWay}"
+					Margin="0,0,0,16">
+                    <ListBox.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel MaxWidth="{Binding ActualWidth, ElementName=Panel}" />
+                        </ItemsPanelTemplate>
+                    </ListBox.ItemsPanel>
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Rectangle Width="40" Height="40" Margin="2" >
+                                <Rectangle.Fill>
+                                    <SolidColorBrush x:Name="Brush" Color="{Binding}" />
+                                </Rectangle.Fill>
+                            </Rectangle>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+
+                <Grid HorizontalAlignment="Left" Height="48" Width="252">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="71*" />
+                        <ColumnDefinition MinWidth="120" Width="135*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+
+                    <Label x:Name="opinionTextBlock" Content="Comment:" VerticalAlignment="Center" Margin="0,0,16,4" />
+                    <TextBox Name="Comments" Grid.ColumnSpan="2" Margin="76,0,-261,-70" Grid.RowSpan="2"/>
+                    
+                    <Button x:Name="reportButton" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Margin="76,161,60,-161" Content="Report" Click="Submit_Click" RenderTransformOrigin="0.5,3" Grid.ColumnSpan="2"/>
+
+                </Grid>
+            </StackPanel>
+        <TextBlock Name="emailblock" Text=" ID:" HorizontalAlignment="Left" Height="20" Margin="0,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"></TextBlock>
+        <TextBox Name="EmailId" HorizontalAlignment="Left" Height="23" Margin="76,189,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock Name="domain" Text="@domain.com" HorizontalAlignment="Left" Height="20" Margin="200,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"></TextBlock>
+    </Grid>
+</UserControl>

@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="AutomationModernUI.Pages.ViewResults.StatisticsPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="600">
+    <Grid Style="{StaticResource ContentRoot}">
+        <ScrollViewer>
+            <StackPanel MinWidth="500">
+                <TextBlock Text="Statistics" Style="{StaticResource SectionHeaderTextStyle}" />
+                <WebBrowser HorizontalAlignment="Stretch"
+                            MinHeight="280"
+                            MinWidth="500"
+							Margin="10"
+							VerticalAlignment="Stretch"
+							Name="SplunkWebBrowser" />
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

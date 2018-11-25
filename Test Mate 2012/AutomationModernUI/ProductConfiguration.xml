@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Product>
+  <TFS_PROJECT_NAME>
+    <Desktop Enabled="False" Uri="" Value="" />
+    <Web Enabled="False" Uri="" Value="" />
+    <API Enabled="True" Uri="" Value="" />
+    <DB Enabled="False" Uri="" Value="" />
+    <Mobile Enabled="False" Uri="" Value="" />
+    <Build Definition="TFS_BUILD_DEFINITION" />
+    <Test Dlls="DROP_LOCATION_DLL_LOCATION" />
+    <SplunkResults CentralizedRun="SPLUNK_DASHBOARD_URL_LOCATION" RealTimeView="" StatisticsView="" />
+    <Roi Factor="0.25" />
+  </TFS_PROJECT_NAME>
+
+</Product>

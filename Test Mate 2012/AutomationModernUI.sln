@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomationModernUI", "AutomationModernUI\AutomationModernUI.csproj", "{ACDBFEC5-E760-42AB-BE46-844FD089E5B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automation.Library", "Automation.Library\Automation.Library.csproj", "{759F11A9-F7CF-471D-8C04-FA2B81AA871F}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://app.visualstudio.com/en
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Automation.Library\\Automation.Library.csproj
+		SccProjectName1 = Automation.Library
+		SccLocalPath1 = Automation.Library
+		SccProjectUniqueName2 = AutomationModernUI\\AutomationModernUI.csproj
+		SccProjectName2 = AutomationModernUI
+		SccLocalPath2 = AutomationModernUI
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACDBFEC5-E760-42AB-BE46-844FD089E5B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACDBFEC5-E760-42AB-BE46-844FD089E5B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACDBFEC5-E760-42AB-BE46-844FD089E5B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACDBFEC5-E760-42AB-BE46-844FD089E5B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{759F11A9-F7CF-471D-8C04-FA2B81AA871F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{759F11A9-F7CF-471D-8C04-FA2B81AA871F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{759F11A9-F7CF-471D-8C04-FA2B81AA871F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{759F11A9-F7CF-471D-8C04-FA2B81AA871F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
